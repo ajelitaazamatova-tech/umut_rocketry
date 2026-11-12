@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Наша цель — Umut Rocketry</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ОБНОВЛЕННАЯ ШАПКА -->
+  <header>
+    <a href="index.html" class="logo-container">
+      <div class="logo-text">UMUT ROCKETRY</div>
+    </a>
+    <div class="burger-menu" id="burgerMenu"><span></span><span></span><span></span></div>
+    <div class="nav-links" id="navLinks">
+      <div class="nav-left">
+        <a href="about.html" data-i18n="nav_aim">Наша цель</a>
+        <a href="engines.html" data-i18n="nav_engines">Двигатели</a>
+        <a href="participants.html" data-i18n="nav_participants">Команда</a>
+      </div>
+      <div class="nav-right">
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="ru">RU</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <a href="login.html" id="loginLink" data-i18n="nav_login">Вход</a>
+        <a href="dashboard.html" id="dashboardLink" style="display:none;" data-i18n="nav_dashboard">Профиль</a>
+        <a href="#" id="logoutLink" style="display:none;" data-i18n="nav_logout">Выйти</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-container">
+    <h1 class="page-title reveal" data-i18n="about_title">Цель проекта</h1>
+    
+    <div class="grid reveal">
+      <div class="card">
+        <h3 data-i18n="about_mission_title">Наша миссия</h3>
+        <p data-i18n="about_mission_text">Приоритет Umut Rocketry — выращивать квалифицированных инструкторов среди учащихся, которые передают навыки по всей Кыргызской Республике. Мы проводим воркшопы и тестовые запуски для всех желающих.</p>
+      </div>
+      <div class="card">
+        <h3 data-i18n="about_science_title">Наука на практике</h3>
+        <p data-i18n="about_science_text">Мы выбрали модельный ракетизм для создания моделей S1, S6 из бумаги, стекловолокна или пластика. Создатели ракет применяют геометрию, химию и физику.</p>
+      </div>
+    </div>
+
+    <div class="card reveal" style="margin-top: 40px;">
+      <h3 data-i18n="about_why_title">Почему модельный ракетизм?</h3>
+      <p style="margin-top: 15px;" data-i18n="about_why_p1">То, что началось как эксперимент на неделе науки в 2023 году, переросло в масштабную образовательную инициативу. В 2024 мы перешли на модельный ракетизм. Это сочетает доступные материалы и квалифицированный подход.</p>
+      <p style="margin-top: 15px;" data-i18n="about_why_p2">Мы помогаем учащимся поступать в колледжи. Мы выпускаем регулярный дайджест — <strong>Umut Rocketry News</strong> — с деталями нашей работы.</p>
+    </div>
+  </main>
+
+  <footer><p>© 2024 Umut Rocketry Team. All rights reserved.</p></footer>
+  <script src="main.js"></script>
+</body>
+</html>

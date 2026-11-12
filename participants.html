@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Команда — Umut Rocketry</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ОБНОВЛЕННАЯ ШАПКА -->
+  <header>
+    <a href="index.html" class="logo-container">
+      <div class="logo-text">UMUT ROCKETRY</div>
+    </a>
+    <div class="burger-menu" id="burgerMenu"><span></span><span></span><span></span></div>
+    <div class="nav-links" id="navLinks">
+      <div class="nav-left">
+        <a href="about.html" data-i18n="nav_aim">Наша цель</a>
+        <a href="engines.html" data-i18n="nav_engines">Двигатели</a>
+        <a href="participants.html" data-i18n="nav_participants">Команда</a>
+      </div>
+      <div class="nav-right">
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="ru">RU</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <a href="login.html" id="loginLink" data-i18n="nav_login">Вход</a>
+        <a href="dashboard.html" id="dashboardLink" style="display:none;" data-i18n="nav_dashboard">Профиль</a>
+        <a href="#" id="logoutLink" style="display:none;" data-i18n="nav_logout">Выйти</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-container">
+    <h1 class="page-title reveal" data-i18n="participants_title">Наша команда</h1>
+    
+    <div class="participants-grid reveal">
+      <div class="participant-card">
+        <img src="images/participant-1.jpg" alt="Elchibek" class="participant-avatar">
+        <div class="participant-name" data-i18n="part_1_name">Элчибек Керимбаев</div>
+        <div class="participant-role" data-i18n="part_1_role">Координатор</div>
+      </div>
+      <div class="participant-card">
+        <img src="images/participant-2.jpg" alt="Student" class="participant-avatar">
+        <div class="participant-name" data-i18n="part_2_name">Имя ученика</div>
+        <div class="participant-role" data-i18n="part_2_role">Создатель моделей</div>
+      </div>
+      <div class="participant-card">
+        <img src="images/participant-3.jpg" alt="Student" class="participant-avatar">
+        <div class="participant-name" data-i18n="part_3_name">Имя ученика</div>
+        <div class="participant-role" data-i18n="part_3_role">Инженер</div>
+      </div>
+    </div>
+  </main>
+
+  <footer><p>© 2024 Umut Rocketry Team. All rights reserved.</p></footer>
+  <script src="main.js"></script>
+</body>
+</html>

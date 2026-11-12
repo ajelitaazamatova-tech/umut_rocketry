@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Umut Rocketry</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <!-- Логотип слева -->
+    <a href="index.html" class="logo-container">
+      <div class="logo-text">UMUT ROCKETRY</div>
+    </a>
+
+    <!-- Бургер (не меняет форму) -->
+    <div class="burger-menu" id="burgerMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Навигация (на десктопе справа) -->
+    <div class="nav-links" id="navLinks">
+      <div class="nav-left">
+        <a href="about.html" data-i18n="nav_aim">Наша цель</a>
+        <a href="engines.html" data-i18n="nav_engines">Двигатели</a>
+        <a href="participants.html" data-i18n="nav_participants">Команда</a>
+      </div>
+      
+      <div class="nav-right">
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="ru">RU</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <a href="login.html" id="loginLink" data-i18n="nav_login">Вход</a>
+        <a href="dashboard.html" id="dashboardLink" style="display:none;" data-i18n="nav_dashboard">Профиль</a>
+        <a href="#" id="logoutLink" style="display:none;" data-i18n="nav_logout">Выйти</a>
+      </div>
+    </div>
+  </header>
+
+    <section class="hero">
+    <div class="hero-container reveal">
+      
+      <!-- Текст по центру -->
+      <h1 class="hero-text">UMUT<br>ROCKETRY</h1>
+    </div>
+  </section>
+
+    <section class="about-section reveal" style="margin-top: 40px;">
+    <div class="about-left">
+      <span class="about-tag" data-i18n="social_title">Наши соцсети</span>
+      <h3 data-i18n="social_text">Подписывайтесь, чтобы первыми узнавать о событиях!</h3>
+    </div>
+    <div class="about-right" style="display: flex; flex-direction: column; gap: 15px;">
+      
+      <!-- Кнопка Telegram канала -->
+      <a href="https://t.me/umutrocketry" target="_blank" class="btn-pill" style="justify-content: space-between; width: 100%; max-width: 300px; background: #0071aa;">
+        <span style="display: flex; align-items: center; gap: 10px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+          Telegram Channel
+        </span>
+        <span style="font-size: 18px;">→</span>
+      </a>
+
+      <!-- Кнопка YouTube канала -->
+      <a href="https://www.youtube.com/channel/UCsfF1uAZ4yNkc_-Klbppuog" target="_blank" class="btn-pill" style="justify-content: space-between; width: 100%; max-width: 300px; background: #a00000;">
+        <span style="display: flex; align-items: center; gap: 10px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+          </svg>
+          YouTube Channel
+        </span>
+        <span style="font-size: 18px;">→</span>
+      </a>
+      
+      <!-- Кнопка Instagram (с фирменным градиентом) -->
+    <a href="https://www.instagram.com/rocketry.umut?utm_source=ig_web_button_share_sheet&psln=ZDNlZDc0MzIxNw==" target="_blank" class="btn-pill" style="justify-content: space-between; width: 100%; max-width: 300px;  background: linear-gradient(45deg, #c97c2b 0%, #dd6e46 25%, #d1253f 50%, rgb(182, 33, 93) 75%, #610c46 100%);">
+      <span style="display: flex; align-items: center; gap: 10px; font-weight: 600;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+        Instagram
+      </span>
+      <span style="font-size: 18px;">→</span>    </a>
+
+    </div>
+  </section>
+
+  <section class="burgundy-section reveal">
+    <div class="section-header" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 20px;">
+      <span class="subtitle" data-i18n="sub_engines" style="margin-top: 15px;">Наши двигатели</span>
+      <h2 data-i18n="title_specs" style="margin: 0;">НОВЫЕ ДВИГАТЕЛИ</h2>
+    </div>
+
+    <div class="showcase-grid">
+      <div class="showcase-card">
+        <div class="showcase-card-img-bg"><img src="images/engine1.jpg" alt="S1"></div>
+        <h3>S1 Class</h3>
+        <p>40 N·s</p>
+      </div>
+      <div class="showcase-card">
+        <div class="showcase-card-img-bg"><img src="images/engine2.jpg" alt="S6"></div>
+        <h3>S6 Class</h3>
+        <p>40 grams</p>
+      </div>
+      <div class="showcase-card">
+        <div class="showcase-card-img-bg"><img src="images/engine3.jpg" alt="Custom"></div>
+        <h3>Custom</h3>
+        <p>Potassium Nitrate</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="editorial-section reveal">
+    <div class="editorial-text">
+      <p data-i18n="edit_p1">Наша команда увлечена инновациями...</p>
+      <p data-i18n="edit_p2">Мы любим экспериментировать...</p>
+      <a href="participants.html" class="btn-pill" data-i18n="btn_about_us">Подробнее о нас</a>
+      <div class="giant-logo-text">UMUT</div>
+    </div>
+    <div class="collage">
+      <img src="images/collage1.jpg" alt="Team" class="img-1">
+      <img src="images/collage2.jpg" alt="Rocket" class="img-2">
+      <img src="images/collage3.jpg" alt="Workshop" class="img-3">
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2024 Umut Rocketry Team. All rights reserved.</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

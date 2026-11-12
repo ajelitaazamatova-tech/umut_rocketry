@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Регистрация — Umut Rocketry</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-left">
+      <a href="index.html">← На главную</a>
+    </div>
+    <a href="index.html" class="logo-container"><div class="logo-text">UMUT ROCKETRY</div></a>
+    <div class="nav-right">
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="auth-wrapper">
+    <div class="auth-container">
+      <h1 data-i18n="form_reg_title">Создать аккаунт</h1>
+      <form id="registerForm" class="auth-form">
+        <div class="input-group">
+          <label data-i18n="form_name">Полное имя</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="input-group">
+          <label data-i18n="form_email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="input-group">
+          <label data-i18n="form_pass">Пароль</label>
+          <input type="password" id="password" required minlength="6">
+        </div>
+        <div class="input-group">
+          <label data-i18n="form_team">Команда / Школа</label>
+          <input type="text" id="team">
+        </div>
+        <button type="submit" class="btn-pill" style="width: 100%; justify-content: center;" data-i18n="form_reg_btn">Зарегистрироваться</button>
+        <p id="msg" class="msg"></p>
+      </form>
+      <p style="text-align: center; margin-top: 20px; font-size: 14px; color: #666;">
+        <span data-i18n="form_have_acc">Уже есть аккаунт?</span> <a href="login.html" style="color: var(--primary); font-weight: 600;">Войти</a>
+      </p>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

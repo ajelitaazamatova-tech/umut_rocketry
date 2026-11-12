@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Двигатели — Umut Rocketry</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo-container">
+      <div class="logo-text">UMUT ROCKETRY</div>
+    </a>
+    <div class="burger-menu" id="burgerMenu"><span></span><span></span><span></span></div>
+    <div class="nav-links" id="navLinks">
+      <div class="nav-left">
+        <a href="about.html" data-i18n="nav_aim">Наша цель</a>
+        <a href="engines.html" data-i18n="nav_engines">Двигатели</a>
+        <a href="participants.html" data-i18n="nav_participants">Команда</a>
+      </div>
+      <div class="nav-right">
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="ru">RU</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <a href="login.html" id="loginLink" data-i18n="nav_login">Вход</a>
+        <a href="dashboard.html" id="dashboardLink" style="display:none;" data-i18n="nav_dashboard">Профиль</a>
+        <a href="#" id="logoutLink" style="display:none;" data-i18n="nav_logout">Выйти</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-container">
+    <h1 class="page-title reveal" data-i18n="engines_title">Ракетные двигатели</h1>
+    
+    <div class="stats-section reveal">
+      <div class="stat-item"><div class="stat-number"><span class="counter" data-target="40">0</span></div><div class="stat-label">Gram</div></div>
+      <div class="stat-item"><div class="stat-number"><span class="counter" data-target="40">0</span></div><div class="stat-label">N·s</div></div>
+      <div class="stat-item"><div class="stat-number"><span class="counter" data-target="5">0</span></div><div class="stat-label">Meters</div></div>
+      <div class="stat-item"><div class="stat-number"><span class="counter" data-target="16">0</span>+</div><div class="stat-label">Age</div></div>
+    </div>
+
+    <div class="grid reveal">
+      <div class="card">
+        <h3 data-i18n="engines_specs">Технические характеристики</h3>
+        <ul class="custom-list">
+          <li data-i18n="spec_1">Материал корпуса: Плотная бумажная гильза (20мм).</li>
+          <li data-i18n="spec_2">Сопло: Прессованный минеральный состав.</li>
+          <li data-i18n="spec_3">Топливо: Нитрат калия + древесный уголь.</li>
+          <li data-i18n="spec_4">Масса: До 40 грамм.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 data-i18n="engines_safety">Безопасность и запуск</h3>
+        <ul class="custom-list">
+          <li data-i18n="safe_1">Возрастное ограничение: 16+</li>
+          <li data-i18n="safe_2">Метод запуска: Только дистанционный.</li>
+          <li data-i18n="safe_3">Запрещено: Разбирать двигатель.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card reveal">
+      <h3 style="color: #D32F2F;" data-i18n="engines_misfire">Действия при осечке</h3>
+      <p data-i18n="engines_misfire_text" style="margin-top:10px;">Если запуск не произошел...</p>
+      <br>
+      <h3 data-i18n="engines_disposal">Утилизация</h3>
+      <p data-i18n="engines_disposal_text" style="margin-top:10px;">Неисправные двигатели...</p>
+    </div>
+  </main>
+
+  <footer><p>© 2024 Umut Rocketry Team. All rights reserved.</p></footer>
+  <script src="main.js"></script>
+</body>
+</html>
